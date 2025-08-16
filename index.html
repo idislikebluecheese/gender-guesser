@@ -1,0 +1,53 @@
+<!doctype html>
+<head>
+<title id="e">Unamed Youtube Thing</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+<div>
+<h1>Gender Guesser by idislikebluecheese</h1>
+<p>50% accurate</p>
+<p id="a"></p>
+<button onclick="guess()">Guess</button>
+</div>
+</body>
+<style>
+* {
+font-family:roboto
+}
+div {
+position:absolute;
+left:35%;
+top:0px
+}
+div p {
+position: absolute;
+right: 45%;
+top: 55%;
+}
+div button {
+position: absolute;
+right: 48%;
+top: 151%;
+}
+#a {
+top: 85%;
+right: 50%;
+position: absolute;
+}
+</style>
+<script>
+function guess(){
+switch(Math.round(Math.random())){
+case 0:
+document.querySelector("#a").innerText = "male"
+document.querySelector("#a").style.color = "#3159e1"
+break
+case 1:
+document.querySelector("#a").innerText = "female"
+document.querySelector("#a").style.color = "#d954d5"
+}
+}
+</script>
